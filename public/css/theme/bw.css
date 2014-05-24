@@ -1,0 +1,71 @@
+body{background: #333;}
+
+.cbp-af-header.cbp-af-header-shrink .menu-list li.active a
+{
+	color: #222 !important;
+}
+
+
+/*==header section css===*/
+.cbp-af-header.cbp-af-header-shrink a,.cbp-af-header.cbp-af-header-shrink .separator{
+	color: #aaa;
+}
+
+.cbp-af-header.cbp-af-header-shrink{
+	border-color: #222 !important;
+}
+
+
+/*==Home section css===*/
+#clock .primary-color{color:#fff;}
+
+
+
+/*==about section css===*/
+section.about{
+	background: #fff;
+	border-bottom: solid 1px #f0f0f0;
+}
+
+.about p {
+	color: #777 !important;
+}
+
+.about h2{
+color: #222 !important;
+}
+
+
+
+/*==service section css===*/
+section.service{background: #f5f5f5;}
+.service .iconFont {color:#333;}
+.feature p{color: #777;}
+
+
+
+/*==contact section css===*/
+section.contact {background: #fff;}
+.contact .iconFont{color:#222;}
+.contact p{color: #777;}
+p.success{color:#df6c4f;}
+#map-canvas{border-top: solid 1px #ddd;border-bottom:solid 1px #ddd;border-left: 0; border-right: 0;}
+
+
+/*==footer section css===*/
+footer{
+color: #555;
+}
+
+footer .iconSocial a {
+	color:#555;
+}
+
+footer .iconSocial a:hover {
+	color:#f5f5f5;
+}
+
+
+.button{
+background: #333; 
+}
