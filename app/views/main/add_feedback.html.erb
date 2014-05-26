@@ -1,0 +1,247 @@
+<script>
+alert('피드백이 전송되었습니다! 의견을 주셔서 감사합니다.');
+</script>
+<!-- Header ================================================================================= -->
+	<header class="cbp-af-header primary-border-color fadeInDown">
+		<div class="row">
+		
+			<div class="sub-row">		
+				<a class="logo" title="Home">	
+									
+		  	<!-- TEXT LOGO -->
+		  	<!-- <span class="text-logo">Inspirazi<span class="primary-color"> CS</span></span> -->  	 					
+				</a>
+	
+				<nav>
+					<ul class="menu-list">
+						<li><a>ABOUT</a></li>
+						<li><a>SERVICE</a></li>
+						<li><a>CONTACT</a></li>
+					</ul>
+		
+					<ul class="social-list">
+						<li class="separator">|</li>
+						<li><span class="iconFont"><a onclick="window.open('http://www.twitter.com/','_blank');" class="fa fa-twitter"></a></span></li>
+						<li><span class="iconFont"><a onclick="window.open('http://www.facebook.com/','_blank');" class="fa fa-facebook"></a></span></li>															
+					</ul>										
+				</nav>
+			</div>
+						
+		</div>
+	</header>
+<!-- Header END ================================================================================= -->
+
+
+<!-- Section Home ================================================================================= -->
+	<section class="home">
+      <div class="row">     
+      
+	      <div class="home-content">	      
+          <h1><img src="/img/title_logo.png" style="width:70%;"/></h1>			
+				
+				<div class="subscribe-box">
+					<h6>메일주소를 입력하시고 관련 소식을 받아보세요!</h6>
+						<input type="text" id="email-subscribe" name="email-subscribe" class="email required">
+						<input type="submit" class="button" value="SUBMIT" id="submit_subscribe" onclick="add_subscribe();">  
+																
+					<span class="subscribe_loading">loading..</span>
+				</div>
+				
+				<div class="subscribe_message">
+					<h3>Thank you!</h3>
+					<p>We have received your message.</p>
+				</div>
+				
+				<div id="clock">		 
+				  	<p><span id="days" class="primary-color"></span><strong> days</strong></p>
+				  	<p><span id="hours"></span><strong> hours</strong></p>
+				  	<p><span id="minutes" class="primary-color"></span><strong> minutes</strong></p>
+				    <p><span id="seconds"></span><strong> seconds</strong></p>    
+				</div>				
+		  </div>
+		  	  
+	  </div>
+	</section>
+<!-- Section Home END ================================================================================= -->	
+	
+	
+	
+<!-- Section About ================================================================================= -->	
+	<section class="about">
+		<div class="row">
+			<h2>ABOUT US</h2>
+      <p><span style="font-weight:bold;">IT기술을 이용해 더 나은 삶을 만들고 싶은, 저희는 프리브라이트(Free Bright)입니다.</span><br>몸(Body)과 마음(Mind) 그리고 사회적 활동(Social)이 합쳐져야 비로소 건강(Health)의 개념을 정의할 수 있습니다.<br>
+      <span style="font-weight:bold;">'스트레스브로(StressBro)'</span>는 다수의 사용자로부터 수면시간, 식사량, 운동량 등의 <span style="font-weight:bold;">신체 데이터</span>, 기분, 우울감, 상황 판단 등의 <span style="font-weight:bold;">스트레스 데이터</span>, SNS 활동량 등의 <span style="font-weight:bold;">사회적 데이터</span>를 쉽고 재미있게 추출하여, 빅데이터 분석을 통해 개인별 맞춤형 진단으로 돌려주는 인공지능 스트레스 관리 서비스입니다. </p>
+		</div>
+	</section>
+<!-- Section About END ================================================================================= -->	
+
+
+
+<!-- Section Service ================================================================================= -->		
+	<section class="service">		
+		<div class="row">
+
+
+
+		<div>
+			<!-- element 1 -->
+			<div class="feature left" id="feature1">
+        <span class="iconFont"><img src="/img/reward.png"/></span>
+				<h3>재미와 보상</h3>				
+        <p>사용자 미션 수행에 따라 포인트 누적 및 뱃지 획득, 쌓인 포인트로 경품 추첨의 행운까지!</p>
+			</div>
+		
+			
+			<!-- element 2 -->	
+			<div class="feature left" id="feature2">
+        <span class="iconFont"><img src="/img/bigdata.png"/></span>
+				<h3>빅데이터</h3>				
+				<p>클러스터링, 다중 선형회귀분석, 상관분석을 통해 정확한 분석 및 진단</p>
+			</div>
+			
+		
+			<!-- element 3 -->		
+			<div class="feature left last" id="feature3">
+        <span class="iconFont"><img src="/img/ai.png"/></span>
+				<h3>맞춤형 인공지능</h3>								
+				<p>사용자의 선택 및 행동 유형에 따라 진화하는 인공지능 닥터와의 커뮤니케이션</p>
+			</div>
+			
+		</div>
+
+
+<!-- If you prefer two columns and six elements, remove this comment AND open css/base.css add and following code at line 237: 
+                                                                                          .row2 .feature{opacity:1 !important;}                                                                                         	
+		<div class="row2">
+
+			<div class="feature left" id="feature4">
+				<span class="iconFont"><i class="fa fa-mobile"></i></span>
+				<h3>MOBILE RESPONSIVE</h3>				
+				<p>Sed ut persp iciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laud antium, totam rem.</p>
+			</div>
+
+			<div class="feature left" id="feature5">
+				<span class="iconFont"><i class="fa fa-wrench"></i></span>
+				<h3>DIGITAL TOOL</h3>				
+				<p>Sed ut persp iciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laud antium, totam rem.</p>
+			</div>
+	
+			<div class="feature left last" id="feature6">
+				<span class="iconFont"><i class="fa fa-thumbs-o-up"></i></span>
+				<h3>SEO TECHNIQUES</h3>								
+				<p>Sed ut persp iciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laud antium, totam rem.</p>
+			</div>
+			
+		</div>		
+End comment -->	
+
+			
+		</div>		
+	</section>
+<!-- Section Service END ================================================================================= -->		
+	
+<!-- Section Contact ===================================================================================== -->		
+	<section class="contact">
+
+
+	<!-- google maps -->		 	
+		<div id="map-canvas"></div>	
+
+	 
+	
+		<div class="row">
+			<div class="info">
+        <h3><span style="font-weight:bold;">언제든 연락주세요!</span></br>프리브라이트는 열려있습니다.<br>당신의 피드백을 기다리고 있습니다.</h3>
+				<ul>
+					<li><p><span class="iconFont"><i class="fa fa-map-marker"></i></span><span class="text">서울시 관악구 봉천동</span></p></li>
+					<li><p><span class="iconFont"><i class="fa fa-envelope"></i></span><span class="text">teamfreebright@gmail.com</span></p></li>
+				</ul>
+				
+
+			
+			</div>
+		
+	<!-- form contact -->	
+		<div class="form-contact">
+		
+			<div class="cont-send">
+				<p class="success">Your message was sent successfully.</p>
+			</div>		
+
+      <form action="/main/add_feedback" method="post">
+        
+    <input type="hidden" value="<%= form_authenticity_token() %>" name="authenticity_token"/>
+			
+				<span class="name-input-cont">
+					<label for="name">Your name:</label>
+					<input type="text" id="name" name="name"  class="required">
+				</span>
+				
+					<span class="email-input-cont">
+					<label for="email">Email adress:</label>
+					<input type="text" id="email" name="email" class="required email">
+				</span>	
+				
+				<span class="message-cont">
+					<label for="comment">Message:</label>
+					<textarea id="comment" class="required" name="comment" ></textarea>
+				
+				</span>	
+				<span class="load-form"></span>					
+				<input type="submit"  class="button" value="SEND MESSAGE" >			
+			</form>		
+		</div>			
+	
+
+		</div>
+	</section>
+<!-- Section Contact END ======================================================================= -->		
+	
+<a id="prev"></a>
+
+<!-- Footer ==================================================================================== -->
+	<footer>
+		<div class="row">
+			<small>FreeBright Copyright &#169; 2013, All rights reserved.</small>
+				<ul class="social">
+					<li><span class="iconSocial"><a href="#" class="fa fa-facebook"></a></span></li>
+					<li><span class="iconSocial"><a href="#" class="fa fa-twitter"></a></span></li>
+					<li><span class="iconSocial"><a href="#" class="fa fa-pinterest"></a></span></li>	
+					<li><span class="iconSocial"><a href="#" class="fa fa-youtube"></a></span></li>
+					<li><span class="iconSocial"><a href="#" class="fa fa-instagram"></a></span></li>
+					<li><span class="iconSocial"><a href="#" class="fa fa-github-alt"></a></span></li>										
+					<li><span class="iconSocial"><a href="#" class="fa fa-tumblr"></a></span></li>
+					<li><span class="iconSocial"><a href="#" class="fa fa-google-plus"></a></span></li>			
+				</ul>
+		</div>
+	</footer>
+  <!-- Footer ends =============================================================================== -->		
+
+<script>
+function add_subscribe(){
+  var getmail = $('#email-subscribe').val();
+  $.ajax({
+  url: '/main/add_subscribe?address=' + getmail,
+  dataType: "json",
+  success: function(data) {
+    if (data == "fail"){
+      alert("이미 구독하고 계신 메일주소입니다.");
+    }
+    else if (data == "wrong"){
+      alert('메일 주소 양식이 맞지 않습니다.');
+      }
+      else{
+      alert( data + '님, 구독해주셔서 감사합니다. 메일이 저장되었습니다.');
+    }
+  },
+error: function(){
+  alert('알 수 없는 오류가 발생하였습니다. 아래의 피드백으로 연락처를 보내주시면 구독신청 및 문제해결을 하겠습니다.');
+}
+      
+      
+      });
+
+}
+
+</script>

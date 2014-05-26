@@ -34,15 +34,13 @@
       <div class="row">     
       
 	      <div class="home-content">	      
-	            <h1>StressBro<br>Coming Soon.</h1>			
+          <h1><img src="/img/title_logo.png" style="width:70%;"/></h1>			
 				
 				<div class="subscribe-box">
-					<h6>Subscribe to get notified, when we launch!</h6>
-					<form id="form-subscribe" name="form-subscribe">
+					<h6>메일주소를 입력하시고 관련 소식을 받아보세요!</h6>
 						<input type="text" id="email-subscribe" name="email-subscribe" class="email required">
-						<input type="submit"  class="button" value="SUBMIT" id="submit_subscribe">  
+						<input type="submit" class="button" value="SUBMIT" id="submit_subscribe" onclick="add_subscribe();">  
 																
-					</form>
 					<span class="subscribe_loading">loading..</span>
 				</div>
 				
@@ -69,7 +67,8 @@
 	<section class="about">
 		<div class="row">
 			<h2>ABOUT US</h2>
-			<p>스트레스브로는 다수의 사용자로부터 수면시간, 식사량, 운동량 등의 데이터 입력을 받아 빅데이터 분석을 통해 개인별 맞춤형 진단으로 돌려주는 인공지능 스트레스 관리 서비스입니다. </p>
+      <p><span style="font-weight:bold;">IT기술을 이용해 더 나은 삶을 만들고 싶은, 저희는 프리브라이트(Free Bright)입니다.</span><br>몸(Body)과 마음(Mind) 그리고 사회적 활동(Social)이 합쳐져야 비로소 건강(Health)의 개념을 정의할 수 있습니다.<br>
+      <span style="font-weight:bold;">'스트레스브로(StressBro)'</span>는 다수의 사용자로부터 수면시간, 식사량, 운동량 등의 <span style="font-weight:bold;">신체 데이터</span>, 기분, 우울감, 상황 판단 등의 <span style="font-weight:bold;">스트레스 데이터</span>, SNS 활동량 등의 <span style="font-weight:bold;">사회적 데이터</span>를 쉽고 재미있게 추출하여, 빅데이터 분석을 통해 개인별 맞춤형 진단으로 돌려주는 인공지능 스트레스 관리 서비스입니다. </p>
 		</div>
 	</section>
 <!-- Section About END ================================================================================= -->	
@@ -85,25 +84,25 @@
 		<div>
 			<!-- element 1 -->
 			<div class="feature left" id="feature1">
-				<span class="iconFont"><i class="fa fa-cogs"></i></span>
+        <span class="iconFont"><img src="/img/reward.png"/></span>
 				<h3>재미와 보상</h3>				
-				<p>Sed ut persp iciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laud antium, totam rem.</p>
+        <p>사용자 미션 수행에 따라 포인트 누적 및 뱃지 획득, 쌓인 포인트로 경품 추첨의 행운까지!</p>
 			</div>
 		
 			
 			<!-- element 2 -->	
 			<div class="feature left" id="feature2">
-				<span class="iconFont"><i class="fa fa-bullseye"></i></span>
+        <span class="iconFont"><img src="/img/bigdata.png"/></span>
 				<h3>빅데이터</h3>				
-				<p>Sed ut persp iciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laud antium, totam rem.</p>
+				<p>클러스터링, 다중 선형회귀분석, 상관분석을 통해 정확한 분석 및 진단</p>
 			</div>
 			
 		
 			<!-- element 3 -->		
 			<div class="feature left last" id="feature3">
-				<span class="iconFont"><i class="fa fa-laptop"></i></span>
+        <span class="iconFont"><img src="/img/ai.png"/></span>
 				<h3>맞춤형 인공지능</h3>								
-				<p>Sed ut persp iciatis unde omnis iste natus error sit volup tatem accus antium dolor emque laud antium, totam rem.</p>
+				<p>사용자의 선택 및 행동 유형에 따라 진화하는 인공지능 닥터와의 커뮤니케이션</p>
 			</div>
 			
 		</div>
@@ -150,12 +149,10 @@ End comment -->
 	
 		<div class="row">
 			<div class="info">
-				<h2>SAY HELLO</h2>
-				<h3>Say hello with the form below,<br>or give us a call or email.</h3>
+        <h3><span style="font-weight:bold;">언제든 연락주세요!</span></br>프리브라이트는 열려있습니다.<br>당신의 피드백을 기다리고 있습니다.</h3>
 				<ul>
-					<li><p><span class="iconFont"><i class="fa fa-map-marker"></i></span><span class="text">Surrey, BC V3W 5Y8, Canadá, CA 12457</span></p></li>
-					<li><p><span class="iconFont"><i class="fa fa-phone"></i></span><span class="text">+1 563-273-3040</span></p></li>
-					<li><p><span class="iconFont"><i class="fa fa-envelope"></i></span><span class="text">contact@mydomain.com</span></p></li>
+					<li><p><span class="iconFont"><i class="fa fa-map-marker"></i></span><span class="text">서울시 관악구 봉천동</span></p></li>
+					<li><p><span class="iconFont"><i class="fa fa-envelope"></i></span><span class="text">teamfreebright@gmail.com</span></p></li>
 				</ul>
 				
 
@@ -169,7 +166,9 @@ End comment -->
 				<p class="success">Your message was sent successfully.</p>
 			</div>		
 
-			<form id="form-contact" >
+      <form action="/main/add_feedback" method="post">
+        
+    <input type="hidden" value="<%= form_authenticity_token() %>" name="authenticity_token"/>
 			
 				<span class="name-input-cont">
 					<label for="name">Your name:</label>
@@ -187,7 +186,7 @@ End comment -->
 				
 				</span>	
 				<span class="load-form"></span>					
-				<input type="submit"  class="button" value="SEND MESSAGE" id="submit_contact_form">			
+				<input type="submit"  class="button" value="SEND MESSAGE" >			
 			</form>		
 		</div>			
 	
@@ -201,7 +200,7 @@ End comment -->
 <!-- Footer ==================================================================================== -->
 	<footer>
 		<div class="row">
-			<small>Company name Copyright &#169; 2013, All rights reserved.</small>
+			<small>FreeBright Copyright &#169; 2013, All rights reserved.</small>
 				<ul class="social">
 					<li><span class="iconSocial"><a href="#" class="fa fa-facebook"></a></span></li>
 					<li><span class="iconSocial"><a href="#" class="fa fa-twitter"></a></span></li>
@@ -214,4 +213,32 @@ End comment -->
 				</ul>
 		</div>
 	</footer>
-<!-- Footer ends =============================================================================== -->		
+  <!-- Footer ends =============================================================================== -->		
+
+<script>
+function add_subscribe(){
+  var getmail = $('#email-subscribe').val();
+  $.ajax({
+  url: '/main/add_subscribe?address=' + getmail,
+  dataType: "json",
+  success: function(data) {
+    if (data == "fail"){
+      alert("이미 구독하고 계신 메일주소입니다.");
+    }
+    else if (data == "wrong"){
+      alert('메일 주소 양식이 맞지 않습니다.');
+      }
+      else{
+      alert( data + '님, 구독해주셔서 감사합니다. 메일이 저장되었습니다.');
+    }
+  },
+error: function(){
+  alert('알 수 없는 오류가 발생하였습니다. 아래의 피드백으로 연락처를 보내주시면 구독신청 및 문제해결을 하겠습니다.');
+}
+      
+      
+      });
+
+}
+
+</script>

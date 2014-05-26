@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'main#index'
    get 'main/index' => 'main#index'
+   get 'main/add_subscribe' => 'main#add_subscribe'
+   post 'main/add_feedback' => 'main#add_feedback'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

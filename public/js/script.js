@@ -284,8 +284,8 @@ $('#prev').click(function () {
  * define the coordinates of your company
  */
 
-lat = 49.14584;
-lng = -122.886557; 
+lat = 37.461770526810525;
+lng = 126.95329576137692; 
 
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
@@ -342,9 +342,9 @@ function initialize() {
   
   var myLatlng = new google.maps.LatLng(lat,lng);
   var mapOptions = {
-    zoom: 12,
+    zoom: 14,
     scrollwheel: false,
-    mapTypeControl:false,
+    mapTypeControl:true,
     streetViewControl:false,
     center: myLatlng,
     mapTypeControlOptions: {
