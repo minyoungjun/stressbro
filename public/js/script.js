@@ -189,9 +189,13 @@ $( function() {
 		delay: 8000,
 
 		backgrounds: [
-			{ src: 'http://www.inspirazi.com.ar/themeforest/relax/bw/img/bg-bw/1.jpg', fade: 2000 },
-			{ src: 'http://www.inspirazi.com.ar/themeforest/relax/bw/img/bg-bw/2.jpg', fade: 2000 },
-			{ src: 'http://www.inspirazi.com.ar/themeforest/relax/bw/img/bg-bw/3.jpg', fade: 2000 }
+			{ src: 'http://stressbro.com/img/bg/1.jpg', fade: 2000 },
+			{ src: 'http://stressbro.com/img/bg/2.jpg', fade: 2000 },
+			{ src: 'http://stressbro.com/img/bg/3.jpg', fade: 2000 },
+			{ src: 'http://stressbro.com/img/bg/4.jpg', fade: 2000 },
+			{ src: 'http://stressbro.com/img/bg/5.jpg', fade: 2000 },
+			{ src: 'http://stressbro.com/img/bg/6.jpg', fade: 2000 },
+			{ src: 'http://stressbro.com/img/bg/7.jpg', fade: 2000 },
 		]
 	} );
 	
